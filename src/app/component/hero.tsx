@@ -2,19 +2,29 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
     <div>
-      <section className="text-gray-800 body-font bg-gray-100">
+      <section className="text-gray-800 body-font bg-fixed bg-cover bg-center
+      custom-image">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-600">
-              I am Asghar Zaheer
+              Hello I am
               <br className="hidden lg:inline-block" />
+              <Typewriter
+                options={{
+                  strings: ["Asghar Zaheer","Web Developer", "UI/UX Designer"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+              
             </h1>
-            <div className="w-[320px] h-[4px] bg-gray-900"></div>
-            <br/>
+            <div className="w-[260px] h-[4px] bg-gray-900"></div>
+            <br />
             <p className="mb-8 leading-relaxed">
               Hello.. I am passionate web developer with expertise in HTML, CSS,
               TypeScript, and Node.js. I specialize in building responsive,
@@ -35,8 +45,8 @@ const Hero = () => {
             <Image
               className="object-cover object-center rounded mx-auto w-[20rem]"
               alt="hero"
-              width={800}
-              height={800}
+              width={300}
+              height={300}
               src="/assests/portfolio.jpg"
             />
           </div>

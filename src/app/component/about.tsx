@@ -4,7 +4,8 @@ import Image from "next/image";
 const About = () => {
   return (
     <div id="about">
-      <section className="text-gray-800 body-font bg-gray-100">
+      <section className="text-gray-800 body-font bg-fixed bg-cover bg-center
+      custom-image">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image

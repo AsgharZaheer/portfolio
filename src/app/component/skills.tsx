@@ -9,7 +9,8 @@ import { RiNextjsFill } from "react-icons/ri";
 const Skills = () => {
   return (
     <div id="skills">
-      <section className="text-gray-600 body-font bg-gray-100">
+      <section className="text-gray-800 body-font bg-fixed bg-cover bg-center
+      custom-image">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h2 className="text-xs text-blue-500 tracking-widest font-medium title-font mb-1"></h2>
